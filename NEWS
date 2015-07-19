@@ -1,0 +1,27 @@
+
+  2010-03-08 Version 0.6-3
+    *  Various fix in the documentation
+    *  Add of a dummy function as.fdata.array
+  
+  2007-10-02 Version 0.6-2
+    *  Various fixes
+
+  2005-01-12 Version 0.6-1
+    *  Modification of is.na.fdata in order to be conform to R 2.5.0
+
+  2005-01-12 Version 0.6-0
+    *  Utilization of Namespace mechanism (introducted in R 1.7.0).
+    *  A new argument in the 'plot.fdata' function has been added
+       ('separator').
+    *  The simulation functions have been modified to accept functional
+       spaces of dimension greater than twice the number of discretization
+       points.
+    *  A new function 'interpol.matrix' is used to calculate the matrix
+       giving the linear interpolation of values of a function.
+    *  The help files are completed.
+
+  2002-02-19 Version 0.5-2
+    *  Add of the theoritical.coef function.
+
+  2001-12-04 Version 0.5-1
+    *  First release of the library.

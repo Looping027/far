@@ -1,0 +1,34 @@
+useDynLib(far)
+
+export(as.fdata, as.fdata.default, as.fdata.list, 
+       as.fdata.matrix, as.fdata.array,
+       base.simul.far, BaseK2BaseC, coef.far, date.fdata, fapply, 
+       far, far.cv, interpol.matrix, invgen, is.na.fdata, kerfon, 
+       maxfdata, multplot, multplot.default, multplot.fdata, 
+       orthonormalization, plot.far, plot.fdata, pred.persist, 
+       predict.far, predict.kerfon, print.far, print.fdata, 
+       print.kerfon, print.summary.fdata, select.fdata, 
+       simul.far, simul.far.sde, simul.far.wiener, simul.farx, 
+       simul.wiener, summary.fdata, theoretical.coef)
+
+S3method(as.fdata, default)
+S3method(as.fdata, list)
+S3method(as.fdata, matrix)
+S3method(as.fdata, array)
+S3method(coef, far)
+S3method(is.na, fdata)
+S3method(multplot, default)
+S3method(multplot, fdata)
+S3method(plot, far)
+S3method(plot, fdata)
+S3method(predict, far)
+S3method(predict, kerfon)
+S3method(print, far)
+S3method(print, fdata)
+S3method(print, kerfon)
+S3method(print, summary.fdata)
+S3method(summary, fdata)
+
+importFrom(nlme,pdMatrix)
+importFrom(nlme,pdSymm)
+

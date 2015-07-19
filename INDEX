@@ -1,0 +1,25 @@
+BaseK2BaseC             Changing Basis
+base.simul.far          Creating functional basis
+coef.far                Extract Model Coefficients
+date.fdata              Extract the date of fdata
+fapply                  Apply functions over a fdata object
+far                     FARX(1) model estimation
+far.cv                  Cross Validation for FARX(1) model
+fdata                   Functional Data class
+interpol.matrix         Interpolation matrix
+invgen                  Generalized inverse of a Matrix
+is.na.fdata             Not Available / "Missing" Values
+kerfon                  Functional Kernel estimation
+maxfdata                Maxima of functional data
+multplot                Multivariate plots
+orthonormalization      Orthonormalization of a set of a matrix
+plot.fdata              Plot Functional Data
+predict.far             Forecasting of FARX(1) model
+predict.kerfon          Forecasting of functional kernel model
+pred.persist            Forecasting using functional persistence
+select.fdata            Subscript of fdata
+simul.far               FAR(1) process simulation
+simul.far.sde           FAR-SDE process simulation
+simul.far.wiener        FAR(1) process simulation with Wiener noise
+simul.farx              FARX(1) process simulation
+simul.wiener            Wiener process simulation

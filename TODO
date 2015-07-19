@@ -1,0 +1,8 @@
+IDEAS FOR FUTURE DEVELOPMENTS
+
+    *  Add bootstrap estimation of confidence intervals.
+    *  Implement spline estimation of far.
+    *  Using Sparse matrix calculation in far estimation not joined
+       (with the SparseM library for instance).
+    *  Use the new 'S4' system of classes and methods instead of the 
+       actual 'S3'. (not sure it will be usefull)
