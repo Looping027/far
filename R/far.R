@@ -6,9 +6,9 @@
 #   Version : 2.2
 #   Date : 2007-10-01
 #         ************************************************************
-#   Author : Julien Damon <julien.damon@free.fr>
+#   Author : Julien Damon <julien.damon@gmail.com>
 #   License : LGPL
-#   URL: http://julien.damon.free.fr
+#   URL: https://github.com/Looping027/far
 #  *****************************************************************************
 
 #  *****************************************************************************

@@ -27,7 +27,7 @@ need some C code to work faster.
   nonparametric methods of estimation for
   time series: scalar and functional kernel.
 
-  \author Julien Damon <julien.damon@free.fr>
+  \author Julien Damon <julien.damon@gmail.com>
   \date   2001-02-27
 */
 #include <R.h>
