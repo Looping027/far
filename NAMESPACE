@@ -29,6 +29,7 @@ S3method(print, kerfon)
 S3method(print, summary.fdata)
 S3method(summary, fdata)
 
-importFrom(nlme,pdMatrix)
-importFrom(nlme,pdSymm)
+importFrom("nlme","pdMatrix","pdSymm")
+importFrom("graphics", "legend", "lines", "matplot", "par", "plot")
+importFrom("stats", "optimize", "rnorm", "var")
 

@@ -5,7 +5,7 @@ Title: Modelization for Functional AutoRegressive Processes
 Author: Damon Julien <julien.damon@gmail.com>
    Guillas Serge
 Maintainer: Damon Julien <julien.damon@gmail.com>
-Depends: R (>= 2.10.0), nlme
+Depends: R (>= 2.10.0), nlme, graphics, stats
 Description: Modelizations and previsions functions for
    Functional AutoRegressive processes using
    nonparametric methods: functional kernel,
