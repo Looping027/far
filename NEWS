@@ -1,8 +1,11 @@
 
-  2010-03-08 Version 0.6-3
+  2022-08-12 Version 0.6-6
     *  Various fix in the documentation
-    *  Add of a dummy function as.fdata.array
-  
+    *  Add far_init.c to suppress a NOTE in the R CMD Check
+
+  2015-07-20 Version 0.6-5
+    *  Various fix in the documentation
+
   2007-10-02 Version 0.6-2
     *  Various fixes
 

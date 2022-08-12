@@ -17,4 +17,3 @@ PackageUseDevtools: Yes
 PackageInstallArgs: --no-multiarch --with-keep.source
 PackageBuildArgs: --force
 PackageBuildBinaryArgs: --force
-PackageCheckArgs: --as-cran
