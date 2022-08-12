@@ -79,7 +79,7 @@ theoretical.coef(m=12,base=base.simul.far(24,5),
   In H, the linear operator \eqn{\rho}{rho} is expressed as:
 
   \deqn{
-    \left(\begin{array}[c]{cc}%
+    \left(\begin{array}{cc}%
     d.rho.mod & \code{d.a} \cr%
     0 & d.rho.exo.mod%
     \end{array}\right)%
@@ -107,7 +107,7 @@ theoretical.coef(m=12,base=base.simul.far(24,5),
   defined by:
 
     \deqn{
-    \left(\begin{array}[c]{cc}%
+    \left(\begin{array}{cc}%
     alpha.mod & alpha.conj.mod \cr%
     t(alpha.conj.mod) & alpha.exo%
     \end{array}\right)%

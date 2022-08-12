@@ -32,7 +32,7 @@ d.rho=diag(c(0.45, 0.9, 0.34, 0.45)), cst1=0.05, m2=NULL)
   form:
 
   \deqn{
-    \left(\begin{array}[c]{cc}%
+    \left(\begin{array}{cc}%
     \code{d.rho} & 0 \cr%
     0 & eps.rho
     \end{array}\right)

@@ -49,7 +49,7 @@ simul.far(m=12,
   In H, the linear operator \eqn{\rho}{rho} is expressed as:
 
   \deqn{
-    \left(\begin{array}[c]{cc}%
+    \left(\begin{array}{cc}%
     \code{d.rho} & 0 \cr%
     0 & eps.rho%
     \end{array}\right)%
@@ -80,7 +80,7 @@ simul.far(m=12,
   defined by:
 
     \deqn{
-    \left(\begin{array}[c]{cc}%
+    \left(\begin{array}{cc}%
     m_2 * \code{alpha} & 0 \cr%
     0 & eps.alpha%
     \end{array}\right)%

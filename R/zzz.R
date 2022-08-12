@@ -22,5 +22,5 @@
 ".onAttach" <- function(lib, pkg)
 {
   packageStartupMessage("far library : Modelization for Functional AutoRegressive processes\n")
-  packageStartupMessage("version 0.6-4 (2014-12-07)\n")
+  packageStartupMessage("version 0.6-6 (2022-08-12)\n")
 }
