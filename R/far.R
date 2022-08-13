@@ -21,9 +21,8 @@
 #  *****************************************************************************
 far <- function(data, y, x, kn, center=TRUE, na.rm=TRUE, joined=FALSE)
 {
-    if ( (!is.null(class(data)))
-        && (class((data)) != "fdata")) # test the type of data
-        stop("data is not of class fdata")
+    if (!inherits(x = data, what = "fdata", which = FALSE))
+      stop("data is not of class fdata")
     call <- match.call()
 
     # find dimensions
@@ -286,12 +285,10 @@ plot.far <- function(x,...)
 predict.far<-function(object, ..., newdata = NULL, label, na.rm=TRUE,
                       positive=FALSE)
 {
-    if ( (!is.null(class(object)))
-        && (class((object)) != "far")) # test the type of data
-        stop("object is not of class far")
-    if ( (!is.null(class(newdata)))
-        && (class((newdata)) != "fdata")) # test the type of data
-        stop("newdata is not of class fdata")
+    if (!inherits(x = object, what = "far", which = FALSE))
+      stop("object is not of class far")
+    if (!inherits(x = newdata, what = "fdata", which = FALSE))
+      stop("newdata is not of class fdata")
 
     x <- object$x
     y <- object$y
@@ -403,8 +400,8 @@ predict.far<-function(object, ..., newdata = NULL, label, na.rm=TRUE,
 far.cv <- function(data, y, x, kn, ncv, cvcrit, center=TRUE, na.rm=TRUE,
                    joined=FALSE)
 {
-    if (class(data) != "fdata") # test the type of data
-        stop("data is not of class fdata")
+    if (!inherits(x = data, what = "fdata", which = FALSE))
+      stop("data is not of class fdata")
     call <- match.call()
 
     # find dimensions

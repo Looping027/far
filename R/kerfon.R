@@ -22,9 +22,8 @@
 #  *****************************************************************************
 kerfon <- function(data, x, r, hmin, hmax, na.rm=TRUE)
 {
-    if ( (!is.null(class(data)))
-        && (class((data)) != "fdata")) # test the type of data
-        stop("data is not of class fdata")
+    if (!inherits(x = data, what = "fdata", which = FALSE))
+      stop("data is not of class fdata")
     call <- match.call()
 
     if (missing(x)) {x <- names(data)}
@@ -120,12 +119,10 @@ print.kerfon <- function(x, ..., digits = max(3, getOption("digits") - 3),
 predict.kerfon <- function(object, ..., newdata = NULL, label, na.rm=TRUE,
                            positive=FALSE)
 {
-    if ( (!is.null(class(object)))
-        && (class((object)) != "kerfon")) # test the type of data
-        stop("object is not of class kerfon")
-    if ( (!is.null(class(newdata)))
-        && (class((newdata)) != "fdata")) # test the type of data
-        stop("newdata is not of class fdata")
+    if (!inherits(x = object, what = "kerfon", which = FALSE))
+      stop("object is not of class kerfon")
+    if (!inherits(x = newdata, what = "fdata", which = FALSE))
+      stop("newdata is not of class fdata")
 
    	h <- object$h[1]
    	p <- dim(object$xdata)[1]

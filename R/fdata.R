@@ -404,9 +404,8 @@ multplot.default <- function (object,...)
 #  *****************************************************************************
 fapply <- function (data,FUN,row.names,...) 
 {
-    if ( (!is.null(class(data)))
-        && (class((data)) != "fdata"))
-        stop("data is not of class fdata")
+    if (!inherits(x = data, what = "fdata", which = FALSE))
+      stop("data is not of class fdata")
     FUN <- match.fun(FUN)
     f1 <- function(x) FUN(x, ...)
     if (missing(row.names)){
@@ -442,9 +441,8 @@ fapply <- function (data,FUN,row.names,...)
 #  *****************************************************************************
 maxfdata <- function(data)
 {
-    if ( (!is.null(class(data)))
-        && (class((data)) != "fdata"))
-        stop("data is not of class fdata")
+    if (!inherits(x = data, what = "fdata", which = FALSE))
+      stop("data is not of class fdata")
     fun1 <- function(x) max(x,na.rm=TRUE)
     return(fapply(data,fun1,row.names="max"))
 }
@@ -480,9 +478,8 @@ is.na.fdata <- function(x)
 #  *****************************************************************************
 select.fdata <- function(data,date=NULL,name=NULL)
 {
-    if ( (!is.null(class(data)))
-        && (class((data)) != "fdata")) # test the type of data
-        stop("data is not of class fdata")
+    if (!inherits(x = data, what = "fdata", which = FALSE))
+      stop("data is not of class fdata")
     if (!is.null(name)) data <- data[name]
     if (!is.null(date)) data <- lapply(data,function(x,y=date)x[,y,drop=FALSE])
     class(data) <- "fdata"
@@ -499,9 +496,8 @@ select.fdata <- function(data,date=NULL,name=NULL)
 #  *****************************************************************************
 date.fdata <- function(data)
 {
-    if ( (!is.null(class(data)))
-        && (class((data)) != "fdata")) # test the type of data
-        stop("data is not of class fdata")
+    if (!inherits(x = data, what = "fdata", which = FALSE))
+      stop("data is not of class fdata")
     return(colnames(data[[1]]))
 }
 
@@ -516,9 +512,8 @@ date.fdata <- function(data)
 pred.persist <- function(data,x,na.rm=TRUE,
                 label,positive=FALSE)
 {
-    if ( (!is.null(class(data)))
-        && (class((data)) != "fdata")) # test the type of data
-        stop("data is not of class fdata")
+    if (!inherits(x = data, what = "fdata", which = FALSE))
+      stop("data is not of class fdata")
     data <- data[x]
     class(data) <- "fdata"
     n <- ncol(data[[1]])
