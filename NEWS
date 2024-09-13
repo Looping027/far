@@ -1,4 +1,7 @@
 
+  2024-09-13 Version 0.6-7
+    *  Compatibility fix for STRICT_R_HEADERS=1
+
   2022-08-12 Version 0.6-6
     *  Various fix in the documentation
     *  Add far_init.c to suppress a NOTE in the R CMD Check

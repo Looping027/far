@@ -82,7 +82,7 @@ void prevkerfon (double *serie_x, double *serie_y, double *serie_x0,
 {
   int i, j, pp=*p;
   double *tmpkval, ttmpkval, kval;
-  double *vide = Calloc((size_t) pp, double);
+  double *vide = R_Calloc((size_t) pp, double);
   ttmpkval = 0.0 ;
   tmpkval = &ttmpkval ;
   kval = 0.0;
@@ -108,7 +108,7 @@ void prevkerfon (double *serie_x, double *serie_y, double *serie_x0,
   {
     result[j] /= kval;
   }
-  Free(vide);
+  R_Free(vide);
 }
 
 /*! Cross validation of Functional Kernel */
@@ -131,10 +131,10 @@ void CVkerfon (double *serie_x, double *serie_y, double *h,
                int *n, int *p, int *r, double *result)
 {
   int i, tj, *j, k, pp=*p, nn=*n, rr=*r;
-  double *vide_court = Calloc((size_t) pp, double),
-         *res        = Calloc((size_t) pp, double),
-         *vide_long  = Calloc((size_t) ((nn - rr) * pp), double),
-         *vide_long2 = Calloc((size_t) ((nn - rr) * pp), double);
+  double *vide_court = R_Calloc((size_t) pp, double),
+         *res        = R_Calloc((size_t) pp, double),
+         *vide_long  = R_Calloc((size_t) ((nn - rr) * pp), double),
+         *vide_long2 = R_Calloc((size_t) ((nn - rr) * pp), double);
   j = &tj;
   tj = nn - rr ;
   *result = 0.0 ;
@@ -156,5 +156,5 @@ void CVkerfon (double *serie_x, double *serie_y, double *h,
               + i]) * (res[i] - serie_y[((k + nn - rr) * pp) + i]);
     }
   }
-  Free(vide_court);Free(res);Free(vide_long);Free(vide_long2);
+  R_Free(vide_court);R_Free(res);R_Free(vide_long);R_Free(vide_long2);
 }
